@@ -3,7 +3,6 @@ let bookData;
 
 describe("Books App", () => {
   beforeEach(() => {
-    cy.viewport(Cypress.env("viewportWidth"), Cypress.env("viewportHeight"));
     cy.visit("/");
   });
   it("login is successful", () => {
