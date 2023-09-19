@@ -4,10 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "ChromeHeadless": "npx cypress run --browser chrome --headless",
-    "ChromeMobile": "npx cypress run --browser chrome --headed --config-file cypress.env.json",
-    "ElectronHeadless": "npx cypress run --browser electron --headless",
-    "ElectronMobile": "npx cypress run --browser electron --headed --config-file cypress.env.json"
+    "test:chrome:headed:laptop": "cypress run --headed --browser chrome --config-file cypress.config.js",
+    "test:chrome:laptop": "cypress run --browser chrome --config-file cypress.config.js",
+    "test:chrome:headed:phone": "cypress run --headed --browser chrome --config-file cypressmobile.config.js",
+    "test:chrome:phone": "cypress run --browser chrome --config-file cypressmobile.config.js",
+    "test:firefox:headed:laptop": "cypress run --headed --browser firefox --config-file cypress.config.js",
+    "test:firefox:laptop": "cypress run --browser firefox --config-file cypress.config.js",
+    "test:firefox:headed:phone": "cypress run --headed --browser firefox --config-file cypressmobile.config.js",
+    "test:firefox:phone": "cypress run --browser firefox --config-file cypressmobile.config.js"
   },
   "author": "",
   "license": "ISC",
